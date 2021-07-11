@@ -11,7 +11,21 @@ const CosmosClient = require('@azure/cosmos').CosmosClient
 
  const app = express()
 
- // view engine setup
+ // API
+// var express = require('express');
+var http = require ('http');
+// var app = express();
+
+app.get('/api', (req, res)=> {
+    res.status(200).send("TESTE!!!");
+    res.status
+}
+
+
+);
+
+
+// view engine setup
  app.set('views', path.join(__dirname, 'views'))
  app.set('view engine', 'jade')
 
