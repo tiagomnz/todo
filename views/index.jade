@@ -6,10 +6,10 @@ block content
      form(action="/completetask", method="post")
       table.table.table-striped.table-bordered
          tr
-           td Name
-           td Category
-           td Date
-           td Complete
+           td Nome
+           td Categoria
+           td Data
+           td Concluida
          if (typeof tasks === "undefined")
            tr
              td
@@ -28,7 +28,7 @@ block content
                  input(type="checkbox", name="#{task.id}", value="#{!task.completed}", checked=task.completed)
                 else
                  input(type="checkbox", name="#{task.id}", value="#{!task.completed}", checked=task.completed)
-       button.btn.btn-primary(type="submit") Update tasks
+       button.btn.btn-primary(type="submit") Atualizar tarefas
      hr
      form.well(action="/addtask", method="post")
        label Item Name:
