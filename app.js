@@ -17,12 +17,9 @@ var http = require ('http');
 // var app = express();
 
 app.get('/api', (req, res)=> {
-    res.status(200).send("TESTE!!!");
-    res.status
-}
-
-
-);
+    res.status(200).send("Verificação do GET");
+    
+});
 
 
 // view engine setup
